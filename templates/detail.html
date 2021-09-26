@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JOBS FOR YOU JOBS FOR ME</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    
+       
+       <script src="https://kit.fontawesome.com/9274ab5ee9.js" crossorigin="anonymous"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        
+    </head>
+    <body>
+        <div class="body">
+            <div class="navbar">
+                <nav id="navbar">
+                    <div>
+                        
+                            <a href="#">jObUjobI</a>
+                        
+                    </div>
+                           
+                    
+                </nav>
+            </div>
+            <div id="main__detail">
+               <div class="left__card">
+                  <div class="detail__input">
+                       <span>
+                          {{jobs.title}}
+                        </span>
+                   </div>
+                   <div class="detail__input">
+                        <p>{{ jobs.description}}</p>
+                    </div>
+                    <div class="detail__input">
+                       <p></p>
+                    </div>
+                    <div class="detail__input">
+                        <p>{{jobs.responsibilities}}</p>
+
+                    </div>
+               </div>
+               <div class="middle__card">
+                   <div class="detail__input"> 
+                       <span>{{jobs.Salary}}</span>
+                   </div>
+                   <div class="detail__input">
+                       <span>{{jobs.job_location}}</span>
+
+                   </div>
+                   <div class="detail__input">
+                       <span>{{ jobs.employment_status}}</span>
+                   </div>
+
+               </div>
+               <div class="right__card">
+                   <div class="detail__input">
+                       <span>{{jobs.application_deadline}}</span>
+
+                   </div>
+                   <div class="detail__input">
+                       <span>{{jobs.category}}</span>
+
+
+                   </div>
+
+               </div>
+
+            </div>
+                       
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        
+            
+        </script>
+        
+    </body>
+</html>

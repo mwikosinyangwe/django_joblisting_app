@@ -1,0 +1,247 @@
+
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+body {
+  font-family: "Maven Pro", sans-serif;
+
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.body {
+  background-color: #c7e1e6;
+  color: #8cd3ff;
+  
+}
+#navbar {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 10px;
+    font-size: 19px;
+    transition: 1s;
+    margin: 0px 5px 10px 5px;
+    
+}
+.button {
+  background-color: white;
+  border: 1px solid  #8cd3ff;
+  color:  #8cd3ff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  background-color:  #8cd3ff !important;
+  transform: scale(0.9, 0.9);
+  transition: 10s;
+  color: white;
+
+}
+.navbar {
+    background-color: white;
+}
+
+.heading {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color:  white;
+  }
+ul li {
+  list-style: none;
+}
+
+#navbar a {
+  font-weight: normal;
+  text-decoration: none !important;
+  transition: all 0.9s ease;
+  color: #8cd3ff;
+}
+#navbar a:hover {
+  color: blue !important;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+
+#cards {
+  display: flex;
+  color: white;
+  margin: 10px;
+  border: 2px solid  #8cd3ff;
+  border-radius: 10px;
+  
+  background-color: white; 
+}
+#cards:hover{
+  background-color: #0f90aa;
+  color: white;
+  transition: all 30s ease;
+}
+
+.logo__class {
+  margin: 10px 15px 10px 15px;
+  
+}
+.job__title {
+  margin: 12px;
+}
+.company__name {
+  margin: 12px;
+}
+.job__location {
+  margin: 12px;
+}
+.closing__date {
+  margin: 12px;
+}
+.date__posted {
+  margin: 12px;
+}
+#btn__detail {
+  margin: 12px;
+  background-color: white;
+  border: 1px solid  #8cd3ff;
+  color:  #8cd3ff;
+  padding: 5px 5px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#btn__detail button{
+  color: #8cd3ff;
+}
+#btn__detail:hover {
+background-color:  #8cd3ff !important;
+transform: scale(0.9, 0.9);
+transition: 10s;
+color: white;
+
+}
+
+
+
+
+
+.heading input[type=text] {
+  border-radius: 10px;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.heading input:focus {
+  border: none;
+}
+.heading input:hover {
+  border: none;
+}
+
+#input_container {
+  position:relative;
+  padding:0 0 0 20px;
+  margin:0 20px;
+  background:#ddd;
+  direction: rtl;
+  width: 350px;
+  text-align: left;
+  font-size: 16px;
+  color: #8cd3ff;
+  
+  
+}
+#input {
+  height:20px;
+  margin:0;
+  padding-right: 30px;
+  width: 100%;
+}
+#input_img {
+  position:absolute;
+  bottom:2px;
+  right:5px;
+  width:24px;
+  height:24px;
+}
+
+#card__btn a {
+  
+  margin: 2px  ;
+  
+  
+  color:  black;
+  padding: 10px 15px;
+  font-size: 19px;
+}
+#card__btn:hover {
+  
+  transform: scale(0.9, 0.9);
+  transition: 10s;
+  color: #5b5b5b;
+
+}
+a {
+  font-weight: normal;
+  text-decoration: none !important;
+  
+  
+}
+#card__link {
+  
+  
+}
+#card__link a {
+  text-decoration: none;
+
+}
+
+#cards {
+  
+  
+}
+
+#main__detail {
+  margin: 15px;
+  padding: 15px;
+  color: #8cd3ff;
+  display: flex;
+  background-color: white;
+  
+  border-radius: 20px;
+  
+}
+#cards span {
+  color: #8cd3ff;
+}
+#cards p {
+  color: #8cd3ff;
+  
+}
+
+.left__card {
+  margin: 20px;
+  padding: 20px;
+}
+.middle__card {
+  margin: 20px;
+  padding: 20px;
+}
+.right__card {
+  margin: 20px;
+  padding:20px;
+}
+.detail__input {
+  margin: 40px;
+}

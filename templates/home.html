@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JOBS FOR YOU JOBS FOR ME</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    
+       
+       <script src="https://kit.fontawesome.com/9274ab5ee9.js" crossorigin="anonymous"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
+        
+    </head>
+    <body>
+        <div class="body">
+            <div class="navbar">
+                <nav id="navbar">
+                    <div>
+                        
+                            <a href="#">jObUjobI</a>
+                        
+                    </div>
+                           
+                    <div>
+                        <a href="{% url 'create' %}"><button class="button">add job</button></a>
+                        
+                    </div>
+                </nav>
+            </div>
+            <div class="feed__all">
+            <div class="heading">
+                <div id="input_container">
+                    <input type="text" id="input" placeholder="find your next job" value>
+                    
+                    <button id="input_img"><i class="fas fa-search fa-lg"></i></button>
+                </div>
+                
+            </div>
+            <div class="main__body">
+                {% for job in jobs %}
+                
+                 <div id="cards">   
+                <div class="logo__class">
+                    <img src="{{job.company_logos.url}}" width="150" height="150">
+                </div>
+                <div class="left__side">
+                    <div class="job__title">
+                        <span>{{job.title}}</span>
+                        
+                    </div>
+                    <div class="company__name">
+                        <span>{{ job.company_name }}</span>
+                    </div>
+                    <div class="job__location">
+                        <span>{{ job.employment_status}}</span>
+
+                    </div>
+                    <div class="job__location">
+                        <span>{{ job.job_location}}</span>
+
+                    </div>
+                    <div class="closing__date">
+                        <span>closes on {{job.application_deadline}}</span>
+                    </div>
+                 </div>
+                 <div>
+                     <div>
+                        <div class="date__posted">
+                            <span> published on {{job.published_on}}</span>
+        
+                            
+                        </div>
+                        <button id="btn__detail">
+                            <a href="{% url 'detail' job.pk %}">View</a>
+                        </button>
+                     </div>
+                 </div>
+                
+                
+                
+                 </div>         
+                {% endfor %}
+                 
+            
+           </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        
+            
+        </script>
+        
+    </body>
+</html>

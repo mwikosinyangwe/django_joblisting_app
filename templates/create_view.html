@@ -1,0 +1,18 @@
+
+{% extends "main.html" %}
+{% block content %}
+
+
+
+
+<form method="post" class="uniform">
+              {% csrf_token %} 
+              <div class="form-group">
+                {{ form  }}
+            </div>
+        
+              
+              <button type="submit">Submit</button>
+        </form>
+
+        {% endblock %}
